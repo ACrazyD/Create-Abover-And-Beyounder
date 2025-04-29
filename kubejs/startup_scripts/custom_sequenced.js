@@ -14,6 +14,11 @@ StartupEvents.registry('item', e => {
   e.create('incomplete_logic_processor').texture('ae2:item/logic_processor').color(0x4F4F4F)
   e.create('incomplete_calculation_processor').texture('ae2:item/calculation_processor').color(0x4F4F4F)
   e.create('incomplete_engineering_processor').texture('ae2:item/engineering_processor').color(0x4F4F4F)
+  //Non-Core
+  e.create('incomplete_energy_processor').texture('appflux:item/energy_processor').color(0x4F4F4F)
+  e.create('incomplete_accumulation_processor').texture('megacells:item/accumulation_processor').color(0x4F4F4F)
+  e.create('incomplete_quantum_processor').texture('advanced_ae:item/quantum_processor').color(0x4F4F4F)
+
   // === Cells ===
   //e.create('incomplete_storage_cell').texture('ae2:item/cell_component_1k').color(0x4F4F4F)
   e.create('incomplete_1k_storage_cell').texture('ae2:item/cell_component_1k').color(0x4F4F4F)

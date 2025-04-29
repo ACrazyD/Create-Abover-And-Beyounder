@@ -13,3 +13,7 @@ StartupEvents.registry('item', (e) => {
     e.create('eclipse_alloy_plate').displayName('Eclipse Alloy Plate').texture('kubejs:item/plate').color(0x405663)
     e.create('eclipse_alloy_rod').displayName('Eclipse Alloy Rod').texture('kubejs:item/rod').color(0x405663)
 })
+
+StartupEvents.registry('block', e => {
+    e.create('certus_hull').displayName('Certus Hull').hardness(1.5)
+})

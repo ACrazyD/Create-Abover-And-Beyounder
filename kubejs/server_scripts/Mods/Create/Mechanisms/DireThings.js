@@ -55,7 +55,10 @@ ServerEvents.recipes(function (event) {
       baseItem: 'createmechanisms:wooden_mechanism',
       incompleteItem: 'kubejs:incomplete_ferricore_mechanism',
       loops: 1,
-      resultItems: [{ id: 'kubejs:ferricore_mechanism' }],
+      resultItems: [
+        { chance: 95.0, id: 'kubejs:ferricore_mechanism' },
+        { chance: 5.0, id: 'justdirethings:raw_ferricore' },
+      ],
       sequenceSteps: [
         { type: 'deploying', ingredient: 'justdirethings:raw_ferricore' },
         { type: 'filling', fluid: 'productivemetalworks:liquid_ferricore', amount: 90 },
@@ -68,7 +71,10 @@ ServerEvents.recipes(function (event) {
       baseItem: 'kubejs:ferricore_mechanism',
       incompleteItem: 'kubejs:incomplete_blazegold_mechanism',
       loops: 2,
-      resultItems: [{ id: 'kubejs:blazegold_mechanism' }],
+      resultItems: [
+        { chance: 95.0, id: 'kubejs:blazegold_mechanism' },
+        { chance: 5.0, id: 'justdirethings:raw_blazegold' },
+      ],
       sequenceSteps: [
         { type: 'deploying', ingredient: 'justdirethings:raw_blazegold' },
         { type: 'filling', fluid: 'productivemetalworks:liquid_blazegold', amount: 90 },
@@ -81,7 +87,10 @@ ServerEvents.recipes(function (event) {
       baseItem: 'kubejs:blazegold_mechanism',
       incompleteItem: 'kubejs:incomplete_celestigem_mechanism',
       loops: 3,
-      resultItems: [{ id: 'kubejs:celestigem_mechanism' }],
+      resultItems: [
+        { chance: 95.0, id: 'kubejs:celestigem_mechanism' },
+        { chance: 5.0, id: 'justdirethings:celestigem' },
+      ],
       sequenceSteps: [
         { type: 'deploying', ingredient: 'justdirethings:celestigem' },
         { type: 'filling', fluid: 'productivemetalworks:liquid_celestigem', amount: 100 },
@@ -94,7 +103,10 @@ ServerEvents.recipes(function (event) {
       baseItem: 'kubejs:celestigem_mechanism',
       incompleteItem: 'kubejs:incomplete_eclipse_alloy_mechanism',
       loops: 4,
-      resultItems: [{ id: 'kubejs:eclipse_alloy_mechanism' }],
+      resultItems: [
+        { chance: 95.0, id: 'kubejs:eclipse_alloy_mechanism' },
+        { chance: 5.0, id: 'justdirethings:raw_eclipsealloy' },
+      ],
       sequenceSteps: [
         { type: 'deploying', ingredient: 'justdirethings:raw_eclipsealloy' },
         { type: 'filling', fluid: 'productivemetalworks:liquid_eclipse_alloy', amount: 90 },

@@ -114,7 +114,12 @@ ServerEvents.recipes(function (event) {
     baseItem: 'createmechanisms:bronze',
     incompleteItem: 'createmechanisms:incomplete_heat_mechanism',
     loops: 5,
-    resultItems: [{ id: 'createmechanisms:heat_mechanism' }],
+    resultItems: [
+      { chance: 60.0, id: 'createmechanisms:heat_mechanism' },
+      { chance: 10.0, id: 'createmechanisms:bronze' },
+      { chance: 5.0, id: 'ftbmaterials:bronze_plate' },
+      { chance: 5.0, id: 'minecraft:magma_block' },
+    ],
     sequenceSteps: [
       { type: 'pressing' },
       { type: 'deploying', ingredient: 'minecraft:magma_block' },
@@ -126,23 +131,17 @@ ServerEvents.recipes(function (event) {
     baseItem: 'createmechanisms:wooden_mechanism',
     incompleteItem: 'createmechanisms:incomplete_rubber_mechanism',
     loops: 1,
-    resultItems: [{ id: 'createmechanisms:rubber_mechanism' }],
+    resultItems: [
+      { chance: 80.0, id: 'createmechanisms:rubber_mechanism' },
+      { chance: 10.0, id: 'createmechanisms:wooden_mechanism' },
+      { chance: 5.0, id: 'create:andesite_casing' },
+      { chance: 5.0, id: 'create:brass_ingot' },
+      { chance: 5.0, id: 'createmechanisms:cured_rubber' },
+    ],
     sequenceSteps: [
       { type: 'deploying', ingredient: 'createmechanisms:cured_rubber' },
       { type: 'pressing' },
       { type: 'deploying', ingredient: 'create:copper_nugget' }
-    ]
-  })
-
-  createSequencedAssembly({
-    baseItem: 'justdirethings:ferricore_ingot',
-    incompleteItem: 'kubejs:incomplete_ferricore_mechanism',
-    loops: 1,
-    resultItems: [{ id: 'kubejs:ferricore_mechanism' }],
-    sequenceSteps: [
-      { type: 'deploying', ingredient: 'createmechanisms:wooden_mechanism' },
-      { type: 'pressing' },
-      { type: 'deploying', ingredient: 'justdirethings:raw_ferricore' }
     ]
   })
 })
